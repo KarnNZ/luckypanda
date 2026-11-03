@@ -1,0 +1,4 @@
+export const metadata = { title: "Privacy Preview Notice" };
+export default function Privacy() {
+  return <main className="container interior legal"><span className="section-label">PREVIEW INFORMATION</span><h1>Privacy <em>notice.</em></h1><div className="notice">Draft preview information, not the final production privacy policy. Legal and privacy review required before public launch.</div><p>The current browser demo requires no account, wallet or Telegram connection. Sample selections and creator entries are kept only in browser memory, are not submitted to a backend and are lost on refresh. The website does not currently offer partner registration or live reward claims.</p><p>Hosting infrastructure may process ordinary technical request information. Future analytics and enquiries will require separate privacy review before activation.</p></main>;
+}
