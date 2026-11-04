@@ -11,3 +11,38 @@
 .site-bg{background:radial-gradient(ellipse 52% 38% at 86% 2%,rgba(242,102,28,.16),transparent),radial-gradient(ellipse 45% 40% at 7% 50%,rgba(22,154,120,.09),transparent),repeating-linear-gradient(125deg,transparent,transparent 135px,rgba(255,255,255,.009) 136px)}
 .site-header{background:rgba(16,22,25,.90)}.brand-mark-original{width:44px;height:44px;object-fit:cover;border-radius:50%;box-shadow:0 0 0 2px rgba(247,187,83,.4)}.brand-words>span{color:#ff9a39}.nav-action{background:linear-gradient(135deg,#ffca73,#f7b53f)}.nav-action:hover,.button-gold:hover{background:#ffe0a5}.hero h1 em,.section-intro em,.community-banner em,.closing-cta em,.interior h1 em{color:#ffb84d}.hero-scene-original{height:520px;max-width:550px;background:linear-gradient(135deg,#fff8ec,#f0dfba);border:6px solid rgba(247,187,83,.45);border-radius:46% 44% 43% 41%;box-shadow:0 25px 55px rgba(0,0,0,.28);overflow:hidden}.hero-scene-original .scene-glow{background:radial-gradient(circle,rgba(255,185,74,.12),transparent 70%)}.original-hero-art{position:relative;z-index:1;object-fit:contain;object-position:center;max-height:100%;width:auto;height:100%;filter:drop-shadow(0 17px 20px rgba(80,37,10,.15));animation:bob 5s ease-in-out infinite}.hero-scene-original .scene-ribbon{z-index:2;top:24px;right:50%;transform:translateX(50%);color:#87431f;white-space:nowrap;letter-spacing:.08em}.hero-scene-original .scene-caption{z-index:2;right:15px;bottom:17px;background:#133f31;color:#ffebc8;transform:rotate(-5deg)}.hero-scene-original .scene-sparkle{z-index:2;color:#f8a139}.announcement{background:linear-gradient(90deg,#ecae41,#ffcf6d,#ea9b39)}.packet-panel{background:linear-gradient(150deg,#243b31,#121c19 65%,#1b2e29);border-color:#687c54}.demo-pill{color:#ffd28f}.theme-option.selected{border-color:#ffc76b}.red-envelope{background:linear-gradient(140deg,#ff6547,#df342a 65%,#981d24)}.envelope-jade{background:linear-gradient(145deg,#54b79a,#168262 73%,#0e4c3f)}.envelope-gold{background:linear-gradient(145deg,#ffe49a,#d99b38 73%,#ba762d)}.envelope-seal{color:#b32d24}.button-gold{background:linear-gradient(135deg,#ffc86c,#f6aa3a);color:#24150f}.step-card,.info-grid article{border-color:rgba(227,126,54,.24)}.community-banner{background:radial-gradient(circle at 84% 45%,rgba(251,116,37,.15),transparent 52%),#182520;border-color:#725136}.community-art-wrap{width:100%;max-width:380px;margin-inline:auto;display:flex;flex-direction:column;align-items:center;gap:12px}.community-original-art{width:min(100%,360px);height:auto;aspect-ratio:1;object-fit:cover;border-radius:25px;border:3px solid rgba(246,157,60,.43);box-shadow:0 23px 34px rgba(0,0,0,.45)}.community-art-caption{color:#fbd6a0;font-weight:800;font-size:9px;letter-spacing:.12em;text-align:center}.footer{background:#0c1416}
 @media(max-width:760px){.brand-mark-original{width:38px;height:38px}.hero-scene-original{height:385px;width:100%;margin-inline:auto;max-width:350px}.original-hero-art{max-height:100%;height:100%;width:auto}.hero-scene-original .scene-ribbon{font-size:8px;top:14px}.hero-scene-original .scene-caption{font-size:9px;right:3px;bottom:6px}.community-art-wrap{margin-top:12px}.community-original-art{max-width:280px}}@media(prefers-reduced-motion:reduce){.original-hero-art{animation:none}}
+
+/* LP-WEB-ANIM-01: Source-faithful six-second Lucky Panda video. */
+.hero-scene.hero-scene-motion {
+  width:100%;
+  height:auto;
+  min-height:0;
+  aspect-ratio:1 / 1;
+  max-width:520px;
+  margin-inline:auto;
+  border:1px solid rgba(255,153,73,.5);
+  border-radius:26px;
+  overflow:hidden;
+  position:relative;
+  background:#951a18;
+  box-shadow:0 26px 65px #0008, 0 0 0 5px rgba(238,112,51,.08);
+}
+.hero-motion-video,.hero-motion-poster{
+  display:block;
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.hero-motion-poster{background:#951a18;}
+@media(max-width:760px){
+  .hero-scene.hero-scene-motion{
+    max-width:min(100%,440px);
+    height:auto;
+    aspect-ratio:1;
+    border-radius:20px;
+    margin-top:20px;
+  }
+}
+@media(prefers-reduced-motion:reduce){.hero-motion-video{display:none}}
