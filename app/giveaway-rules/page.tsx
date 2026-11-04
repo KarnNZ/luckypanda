@@ -1,0 +1,4 @@
+export const metadata = { title: "Giveaway Demonstration Rules" };
+export default function Rules() {
+  return <main className="container interior legal"><span className="section-label">DEMONSTRATION RULES</span><h1>Fair play, <em>little surprises.</em></h1><div className="notice">These explain demo behaviour only and are not rules for genuine prize campaigns.</div><p>Every reward shown on this website is simulated. Demonstration results follow a fixed example sequence; there is no real draw, random payout or allocation of value. Example badges, points and vouchers have no monetary value and cannot be claimed or redeemed.</p><p>Genuine prize campaigns require separate verified eligibility, official terms, relevant jurisdictional review, secure outcomes and clear claim procedures before being offered.</p></main>;
+}
