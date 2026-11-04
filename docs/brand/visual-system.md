@@ -51,9 +51,9 @@ Avoid oversaturating entire pages with flame gradients. Use high contrast and ac
 
 ## Source provenance and ingestion
 
-The owner supplied original JPEG art and six MP4 clips in the 4 Nov 2026 Lucky Panda design conversation. A self-contained bundle `lucky-panda-brand-kit-20261104.zip` containing selected unchanged source JPEGs, optimized WebP variants, SHA-256 manifest and video contact-sheet is attached to the same conversation for owner download. **The binary images are not yet in GitHub.**
+The owner supplied original JPEG art and six MP4 clips in the 4 Nov 2026 Lucky Panda design conversation. A self-contained bundle `lucky-panda-brand-kit-20261104.zip` containing selected unchanged source JPEGs, optimized WebP variants, SHA-256 manifest and video contact-sheet is attached to the same conversation for owner download. **Three web-optimised image derivatives are now stored in GitHub under `public/brand/` on the isolated feature branch. Original files remain in the owner's brand kit; see `docs/brand/asset-import-gate.md` for exact provenance and Git blob hashes.**
 
-GitHub ingestion must use an authorized file upload / Work browser / authenticated local Git checkout. These installed GitHub connector actions do not directly access the conversation container's binary assets. Do not commit new UI references to image paths until the corresponding actual image files exist and builds pass.
+GitHub ingestion must use an authorized file upload / Work browser / authenticated local Git checkout. These installed GitHub connector actions do not directly access the conversation container's binary assets. The three referenced local WebP images are now committed to the feature branch. Run CI and review image rendering before publishing.
 
 Proposed location: `public/brand/`. Use stable names and retain original provenance under `docs/brand/` where helpful. Avoid another paid asset service.
 
