@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "Lucky Panda | Open a Little Luck", template: "%s | Lucky Panda" },
   description: "Explore interactive red-packet giveaways and community rewards for Telegram. Try a free browser demonstration. No cryptocurrency required.",
   robots: { index: false, follow: false },
+  icons: { icon: "/brand/mascot-emblem.webp", apple: "/brand/mascot-emblem.webp" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -16,7 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <header className="site-header">
           <div className="container header-inner">
             <Link href="/" className="brand" aria-label="Lucky Panda homepage">
-              <span className="brand-mark" aria-hidden="true">🐼</span>
+              <Image className="brand-mark-original" src="/brand/mascot-emblem.webp" alt="" aria-hidden="true" width={44} height={44} sizes="44px" />
               <span className="brand-words">LUCKY<span>PANDA</span><small>OPEN A LITTLE LUCK</small></span>
             </Link>
             <nav className="nav-links" aria-label="Main navigation">
@@ -28,7 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <footer className="footer">
           <div className="container footer-inner">
-            <div><strong>🐼 LUCKY PANDA</strong><p>Red packets. Real community spirit. A MadLabz project.</p><span>Website preview · All packet rewards are simulated.</span></div>
+            <div><strong>LUCKY PANDA 🧧</strong><p>Red packets. Real community spirit. A MadLabz project.</p><span>Website preview · All packet rewards are simulated.</span></div>
             <nav aria-label="Footer navigation"><Link href="/about">About</Link><Link href="/demo">Try the demo</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/giveaway-rules">Giveaway rules</Link></nav>
           </div>
         </footer>

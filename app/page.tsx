@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PacketExperience } from "@/components/PacketExperience";
-import { PandaMascot } from "@/components/PandaMascot";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -17,11 +17,11 @@ export default function HomePage() {
           </div>
           <div className="hero-proof"><span className="hero-proof-icon">✳</span><div><strong>A real product in development</strong><small>Try a simulated version right here. No sign-up, wallet or Telegram needed.</small></div></div>
         </div>
-        <div className="hero-scene">
+        <div className="hero-scene hero-scene-original">
           <span className="scene-ribbon">A LITTLE MAGIC IN EVERY PACKET</span>
           <div className="scene-glow" aria-hidden="true" />
           <span className="scene-sparkle s1" aria-hidden="true">✦</span><span className="scene-sparkle s2" aria-hidden="true">✧</span><span className="scene-sparkle s3" aria-hidden="true">✦</span>
-          <PandaMascot />
+          <Image src="/brand/panda-rewards-pouch.webp" alt="Original Lucky Panda mascot wearing a jade pendant and red sash, holding red packets and a reward pouch" width={640} height={960} priority sizes="(max-width: 760px) 80vw, 440px" className="original-hero-art" />
           <div className="scene-caption">HELLO, I'M LUCKY! <span>♡</span></div>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function HomePage() {
       </section>
       <section className="container community-banner">
         <div><span className="section-label">03 / FOR EVERY KIND OF COMMUNITY</span><h2>A little luck goes<br /><em>a long way.</em></h2><p>For creators, businesses, gaming groups and crypto communities alike. Lucky Panda is designed to make giving back feel fun.</p><Link href="/communities" className="button button-gold">Explore community use cases <span aria-hidden="true">↗</span></Link></div>
-        <div className="community-card-stack" aria-label="Illustrative reward types"><div className="mini-card"><span>🎟️</span><strong>VIP PERKS</strong><small>Illustrative</small></div><div className="mini-card"><span>🎁</span><strong>GIFT VOUCHERS</strong><small>Illustrative</small></div><div className="mini-card"><span>🌟</span><strong>COMMUNITY BADGES</strong><small>Illustrative</small></div></div>
+        <div className="community-art-wrap"><Image src="/brand/panda-flaming-horse.webp" alt="Original Lucky Panda promotional illustration riding a fiery horse; illustrative seasonal artwork, not a prize" width={960} height={960} sizes="(max-width: 760px) 75vw, 380px" className="community-original-art" /><span className="community-art-caption">ORIGINAL LUCKY PANDA ART • SEASONAL INSPIRATION</span></div>
       </section>
       <section className="container closing-cta"><span className="section-label">A LITTLE LUCK LOOKS GOOD ON YOU</span><h2>Ready for your <em>first packet?</em></h2><p>The playground is open. The real Telegram handoff will appear after its official identity is verified.</p><Link href="/demo" className="button button-gold">🧧 Try Lucky Panda free <span aria-hidden="true">↗</span></Link></section>
     </main>
