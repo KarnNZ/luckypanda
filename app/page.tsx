@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PacketExperience } from "@/components/PacketExperience";
 import Image from "next/image";
+import { HeroPandaAnimation } from "@/components/HeroPandaAnimation";
 
 export default function HomePage() {
   return (
@@ -17,13 +18,7 @@ export default function HomePage() {
           </div>
           <div className="hero-proof"><span className="hero-proof-icon">✳</span><div><strong>A real product in development</strong><small>Try a simulated version right here. No sign-up, wallet or Telegram needed.</small></div></div>
         </div>
-        <div className="hero-scene hero-scene-original">
-          <span className="scene-ribbon">A LITTLE MAGIC IN EVERY PACKET</span>
-          <div className="scene-glow" aria-hidden="true" />
-          <span className="scene-sparkle s1" aria-hidden="true">✦</span><span className="scene-sparkle s2" aria-hidden="true">✧</span><span className="scene-sparkle s3" aria-hidden="true">✦</span>
-          <Image src="/brand/panda-rewards-pouch.webp" alt="Original Lucky Panda mascot wearing a jade pendant and red sash, holding red packets and a reward pouch" width={640} height={960} priority sizes="(max-width: 760px) 80vw, 440px" className="original-hero-art" />
-          <div className="scene-caption">HELLO, I'M LUCKY! <span>♡</span></div>
-        </div>
+        <HeroPandaAnimation />
       </section>
       <div className="announcement"><div className="container announcement-inner"><span>✷</span> MORE THAN A GIVEAWAY BOT <span className="ann-divider">/</span> MADE FOR COMMUNITIES, CREATORS & BRANDS <span>✷</span></div></div>
       <section id="hero-demo" className="container showcase-section">
